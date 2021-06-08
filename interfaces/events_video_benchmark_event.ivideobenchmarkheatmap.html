@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>VisibleEmotionData | Annoto Widget API - v1.13.1</title>
+	<title>IVideoBenchmarkHeatmap | Annoto Widget API - v1.13.1</title>
 	<meta name="description" content="Documentation for Annoto Widget API - v1.13.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,24 +53,33 @@
 					<a href="../index.html">Annoto Widget API - v1.13.1</a>
 				</li>
 				<li>
-					<a href="../modules/api_metadata.html">api/metadata</a>
+					<a href="../modules/events_video_benchmark_event.html">events/video-benchmark-event</a>
 				</li>
 				<li>
-					<a href="api_metadata.visibleemotiondata.html">VisibleEmotionData</a>
+					<a href="events_video_benchmark_event.ivideobenchmarkheatmap.html">IVideoBenchmarkHeatmap</a>
 				</li>
 			</ul>
-			<h1>Interface VisibleEmotionData</h1>
+			<h1>Interface IVideoBenchmarkHeatmap</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Each video divided into segments based on viewer watch pattern
+							x timestamp in seconds of the segment end, y is view intencity.
+						single full segment view is y = 1.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">VisibleEmotionData</span>
+						<span class="target">IVideoBenchmarkHeatmap</span>
 					</li>
 				</ul>
 			</section>
@@ -81,10 +90,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="api_metadata.visibleemotiondata.html#cn" class="tsd-kind-icon">cn</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="api_metadata.visibleemotiondata.html#rcn" class="tsd-kind-icon">rcn</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="api_metadata.visibleemotiondata.html#tvn" class="tsd-kind-icon">tvn</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="api_metadata.visibleemotiondata.html#vn" class="tsd-kind-icon">vn</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_video_benchmark_event.ivideobenchmarkheatmap.html#series" class="tsd-kind-icon">series</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,42 +99,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="cn" class="tsd-anchor"></a>
-					<h3>cn</h3>
-					<div class="tsd-signature tsd-kind-icon">cn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="series" class="tsd-anchor"></a>
+					<h3>series</h3>
+					<div class="tsd-signature tsd-kind-icon">series<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/api/metadata.ts#L20">api/metadata.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rcn" class="tsd-anchor"></a>
-					<h3>rcn</h3>
-					<div class="tsd-signature tsd-kind-icon">rcn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/api/metadata.ts#L21">api/metadata.ts:21</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tvn" class="tsd-anchor"></a>
-					<h3>tvn</h3>
-					<div class="tsd-signature tsd-kind-icon">tvn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/api/metadata.ts#L22">api/metadata.ts:22</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="vn" class="tsd-anchor"></a>
-					<h3>vn</h3>
-					<div class="tsd-signature tsd-kind-icon">vn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/api/metadata.ts#L19">api/metadata.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/video-benchmark-event.ts#L7">events/video-benchmark-event.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,7 +134,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/api_device_detector.html">api/device-<wbr>detector</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/api_metadata.html">api/metadata</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -194,7 +170,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/events_ux_event.html">events/ux-<wbr>event</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/events_video_benchmark_event.html">events/video-<wbr>benchmark-<wbr>event</a>
 					</li>
 				</ul>
@@ -202,36 +178,15 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="api_metadata.annotometadata.html" class="tsd-kind-icon">Annoto<wbr>Metadata</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="api_metadata.commentscounters.html" class="tsd-kind-icon">Comments<wbr>Counters</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="api_metadata.contentcounters.html" class="tsd-kind-icon">Content<wbr>Counters</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="api_metadata.threadmetadata.html" class="tsd-kind-icon">Thread<wbr>Metadata</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="api_metadata.visiblecountersdata.html" class="tsd-kind-icon">Visible<wbr>Counters<wbr>Data</a>
+						<a href="events_video_benchmark_event.ivideobenchmarkevent.html" class="tsd-kind-icon">IVideo<wbr>Benchmark<wbr>Event</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="api_metadata.visibleemotiondata.html" class="tsd-kind-icon">Visible<wbr>Emotion<wbr>Data</a>
+						<a href="events_video_benchmark_event.ivideobenchmarkheatmap.html" class="tsd-kind-icon">IVideo<wbr>Benchmark<wbr>Heatmap</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="api_metadata.visibleemotiondata.html#cn" class="tsd-kind-icon">cn</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="api_metadata.visibleemotiondata.html#rcn" class="tsd-kind-icon">rcn</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="api_metadata.visibleemotiondata.html#tvn" class="tsd-kind-icon">tvn</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="api_metadata.visibleemotiondata.html#vn" class="tsd-kind-icon">vn</a>
+								<a href="events_video_benchmark_event.ivideobenchmarkheatmap.html#series" class="tsd-kind-icon">series</a>
 							</li>
 						</ul>
 					</li>

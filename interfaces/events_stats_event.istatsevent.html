@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IAnnotoStatsEvent | Annoto Widget API - v1.13.0</title>
-	<meta name="description" content="Documentation for Annoto Widget API - v1.13.0">
+	<title>IStatsEvent | Annoto Widget API - v1.13.1</title>
+	<meta name="description" content="Documentation for Annoto Widget API - v1.13.1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">Annoto Widget API - v1.13.0</a>
+					<a href="../index.html" class="title">Annoto Widget API - v1.13.1</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -50,16 +50,16 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../index.html">Annoto Widget API - v1.13.0</a>
+					<a href="../index.html">Annoto Widget API - v1.13.1</a>
 				</li>
 				<li>
 					<a href="../modules/events_stats_event.html">events/stats-event</a>
 				</li>
 				<li>
-					<a href="events_stats_event.iannotostatsevent.html">IAnnotoStatsEvent</a>
+					<a href="events_stats_event.istatsevent.html">IStatsEvent</a>
 				</li>
 			</ul>
-			<h1>Interface IAnnotoStatsEvent</h1>
+			<h1>Interface IStatsEvent</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IAnnotoStatsEvent</span>
+						<span class="target">IStatsEvent</span>
 					</li>
 				</ul>
 			</section>
@@ -81,15 +81,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#group_id" class="tsd-kind-icon">group_<wbr>id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#media_src" class="tsd-kind-icon">media_<wbr>src</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#ps" class="tsd-kind-icon">ps</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#session_id" class="tsd-kind-icon">session_<wbr>id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#timestamp" class="tsd-kind-icon">timestamp</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#ugc_id" class="tsd-kind-icon">ugc_<wbr>id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.iannotostatsevent.html#visitor_id" class="tsd-kind-icon">visitor_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.istatsevent.html#group_id" class="tsd-kind-icon">group_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.istatsevent.html#media_src" class="tsd-kind-icon">media_<wbr>src</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.istatsevent.html#ps" class="tsd-kind-icon">ps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.istatsevent.html#session_id" class="tsd-kind-icon">session_<wbr>id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.istatsevent.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="events_stats_event.istatsevent.html#visitor_id" class="tsd-kind-icon">visitor_<wbr>id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,23 +96,18 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="group_id" class="tsd-anchor"></a>
-					<h3>group_<wbr>id</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> group_<wbr>id</h3>
 					<div class="tsd-signature tsd-kind-icon">group_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L28">events/stats-event.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L33">events/stats-event.ts:33</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L32">events/stats-event.ts:32</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The group Id provided on <a href="config_media_details.mediadetails.html">MediaDetails</a></p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="media_src" class="tsd-anchor"></a>
@@ -123,9 +115,14 @@
 					<div class="tsd-signature tsd-kind-icon">media_<wbr>src<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L34">events/stats-event.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L37">events/stats-event.ts:37</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Media source</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="ps" class="tsd-anchor"></a>
@@ -133,9 +130,14 @@
 					<div class="tsd-signature tsd-kind-icon">ps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L31">events/stats-event.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L41">events/stats-event.ts:41</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Video timestamp in seconds</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="session_id" class="tsd-anchor"></a>
@@ -143,39 +145,29 @@
 					<div class="tsd-signature tsd-kind-icon">session_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L30">events/stats-event.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L49">events/stats-event.ts:49</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="timestamp" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> timestamp</h3>
-					<div class="tsd-signature tsd-kind-icon">timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L33">events/stats-event.ts:33</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Unique session identifier</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/events_stats_event.statstype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">StatsType</a></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/events_stats_event.statstypeenum.html" class="tsd-signature-type" data-tsd-kind="Enumeration">StatsTypeEnum</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L26">events/stats-event.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L29">events/stats-event.ts:29</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="ugc_id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ugc_<wbr>id</h3>
-					<div class="tsd-signature tsd-kind-icon">ugc_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L27">events/stats-event.ts:27</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type of the event</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="visitor_id" class="tsd-anchor"></a>
@@ -183,9 +175,14 @@
 					<div class="tsd-signature tsd-kind-icon">visitor_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L29">events/stats-event.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/Annoto/widget-api/blob/master/lib/events/stats-event.ts#L45">events/stats-event.ts:45</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Unique visitor identifier</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -257,39 +254,30 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/events_stats_event.statstype.html" class="tsd-kind-icon">Stats<wbr>Type</a>
+						<a href="../enums/events_stats_event.statstypeenum.html" class="tsd-kind-icon">Stats<wbr>Type<wbr>Enum</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="events_stats_event.iannotostatsevent.html" class="tsd-kind-icon">IAnnoto<wbr>Stats<wbr>Event</a>
+						<a href="events_stats_event.istatsevent.html" class="tsd-kind-icon">IStats<wbr>Event</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#group_id" class="tsd-kind-icon">group_<wbr>id</a>
+								<a href="events_stats_event.istatsevent.html#group_id" class="tsd-kind-icon">group_<wbr>id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#id" class="tsd-kind-icon">id</a>
+								<a href="events_stats_event.istatsevent.html#media_src" class="tsd-kind-icon">media_<wbr>src</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#media_src" class="tsd-kind-icon">media_<wbr>src</a>
+								<a href="events_stats_event.istatsevent.html#ps" class="tsd-kind-icon">ps</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#ps" class="tsd-kind-icon">ps</a>
+								<a href="events_stats_event.istatsevent.html#session_id" class="tsd-kind-icon">session_<wbr>id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#session_id" class="tsd-kind-icon">session_<wbr>id</a>
+								<a href="events_stats_event.istatsevent.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#timestamp" class="tsd-kind-icon">timestamp</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#type" class="tsd-kind-icon">type</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#ugc_id" class="tsd-kind-icon">ugc_<wbr>id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="events_stats_event.iannotostatsevent.html#visitor_id" class="tsd-kind-icon">visitor_<wbr>id</a>
+								<a href="events_stats_event.istatsevent.html#visitor_id" class="tsd-kind-icon">visitor_<wbr>id</a>
 							</li>
 						</ul>
 					</li>
